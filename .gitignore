@@ -209,4 +209,5 @@ doc/
 demo/_data/version.yml
 demo/release
 
-declaration/
+###declaration/
+###dist/

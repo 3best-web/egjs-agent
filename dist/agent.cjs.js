@@ -277,7 +277,8 @@ function getLegacyAgent(userAgent) {
     browser: browser,
     os: os,
     isMobile: isMobile,
-    isHints: false
+    isHints: false,
+    model: ''
   };
 }
 

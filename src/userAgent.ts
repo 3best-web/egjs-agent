@@ -66,5 +66,6 @@ export function getLegacyAgent(userAgent?: string): AgentInfo {
         os,
         isMobile,
         isHints: false,
+        model: '',
     };
 }

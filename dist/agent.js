@@ -281,7 +281,8 @@ version: 2.4.3-snapshot
         browser: browser,
         os: os,
         isMobile: isMobile,
-        isHints: false
+        isHints: false,
+        model: ''
       };
     }
 
