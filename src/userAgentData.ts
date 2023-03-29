@@ -8,6 +8,7 @@ export function getClientHintsAgent(osData?: UADataValues): AgentInfo {
     const brands = [...(userAgentData.uaList || userAgentData.brands)!];
     const fullVersionList = osData && osData.fullVersionList;
     const isMobile = userAgentData.mobile || false;
+    const model = osData && osData.model;//★
     const firstBrand = brands[0];
     const platform = (osData && osData.platform || userAgentData.platform || navigator.platform).toLowerCase();
     const browser: AgentBrowserInfo = {
@@ -74,5 +75,6 @@ export function getClientHintsAgent(osData?: UADataValues): AgentInfo {
         os,
         isMobile,
         isHints: true,
+        model: model || '',
     };
 }

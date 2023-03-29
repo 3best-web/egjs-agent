@@ -50,6 +50,7 @@ export interface AgentInfo {
     os: AgentOSInfo;
     isMobile: boolean;
     isHints: boolean;
+    model: string;//★
 }
 
 export interface PresetInfo {
